@@ -13,16 +13,18 @@
 
 # Solution
 
-# maximum capacity
+current_guest= 200
 max_capacity = 200
+min_age = 18
+max_age = 60
 
 # Using print and input functions, prompt the user for their age and the current number of guests inside the club. 
 guest = int(input("How old are you?  "))
 
 # Guests must be at least 18 years old.
-if guest < 18 or guest >= 60:
+if guest < min_age or guest >= max_age:
     print("Sorry, you cannot enter the club due to age restrictions.")
-elif max_capacity >= 200:
+elif max_capacity >= current_guest:
     print("sorry, the club is at maximum capacity. Please try again later.")
 else:
     print("Welcome to Berghain!")
