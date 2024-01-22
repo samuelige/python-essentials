@@ -23,3 +23,19 @@ numbers.append(9)
 numbers = numbers + [10, 23, 43]
 print(numbers)
 
+# Remove items from the list
+# del method
+del numbers[0]
+print(numbers)
+
+# Remove a specific item from the list
+numbers.remove(2)
+print(numbers)
+
+# Using the pops
+lasst_number = numbers.pop()
+print(lasst_number)
+
+# Pop with a specific index
+some_number = numbers.pop(-2)
+print(some_number)
